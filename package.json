@@ -10,7 +10,7 @@
     "test": "node test/test.js"
   },
   "typescript": {
-    "definition": "dist/classname.d.ts"
+    "definition": "index.d.ts"
   },
   "author": "Max Koverdyaev",
   "license": "ISC",

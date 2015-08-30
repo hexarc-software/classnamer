@@ -6,6 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "scripts": {
+    "preinstall": "npm install autodts",
+    "postinstall": "autodts link",
+    "prepublish": "tsc && autodts generate"
+  },
+  "typescript": {
+    "definition": "index.d.ts"
+  },
   "author": "Max Koverdyaev",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autodts": "0.0.4"
+  }
 }

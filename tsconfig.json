@@ -5,6 +5,7 @@
         "module": "commonjs",
         "isolatedModules": false,
         "jsx": "react",
+        "declaration": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "noImplicitAny": false,
@@ -21,7 +22,7 @@
         "!./src/**/*.ts"
     ],
     "files": [
-        "./index.ts",
-        "./test.ts"
+        "./index.d.ts",
+        "./index.ts"
     ]
 }

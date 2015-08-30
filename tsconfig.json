@@ -17,10 +17,10 @@
     "filesGlob": [
         "./**/*.ts",
         "./**/*.tsx",
-        "!./node_modules/**/*"
+        "!./node_modules/**/*",
+        "!./src/**/*.d.ts"
     ],
     "files": [
-        "./src/classname.d.ts",
         "./src/classname.ts"
     ]
 }

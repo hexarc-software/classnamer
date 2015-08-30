@@ -1,6 +1,5 @@
-export declare module classname {
-    interface ClassNameFragment {
-        [key: string]: boolean;
-    }
-    function format(...args: Array<string | number | ClassNameFragment>): string;
+export interface ClassNameFragment {
+    [key: string]: boolean;
 }
+export declare function format(...args: Array<string | number | ClassNameFragment>): string;
+export declare function none(): void;

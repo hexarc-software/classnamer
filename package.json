@@ -2,7 +2,7 @@
   "name": "classname",
   "version": "0.0.1-alpha",
   "description": "",
-  "main": "dist/classname.js",
+  "main": "dist/lib.js",
   "scripts": {
     "preinstall": "npm install autodts",
     "postinstall": "autodts link",

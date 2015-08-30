@@ -12,7 +12,8 @@
         "removeComments": true,
         "noLib": false,
         "preserveConstEnums": true,
-        "suppressImplicitAnyIndexErrors": true
+        "suppressImplicitAnyIndexErrors": true,
+        "outDir": "dist"
     },
     "filesGlob": [
         "./**/*.ts",
@@ -22,7 +23,8 @@
         "!./src/**/*.ts"
     ],
     "files": [
-        "./index.d.ts",
+        "./dist/index.d.ts",
+        "./dist/src/classname.d.ts",
         "./index.ts"
     ]
 }

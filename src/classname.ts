@@ -1,4 +1,4 @@
-module classnames {
+module classname {
 
     export interface ClassNameFragment {
         [key: string]: boolean;
@@ -26,5 +26,5 @@ module classnames {
     export function none() {
         throw new Error("Not implemented yet");
     }
-    
+
 }

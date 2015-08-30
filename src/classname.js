@@ -1,5 +1,5 @@
-var classnames;
-(function (classnames) {
+var classname;
+(function (classname) {
     function format() {
         var args = [];
         for (var _i = 0; _i < arguments.length; _i++) {
@@ -24,9 +24,9 @@ var classnames;
             return accum;
         }, []).join(" ");
     }
-    classnames.format = format;
+    classname.format = format;
     function none() {
         throw new Error("Not implemented yet");
     }
-    classnames.none = none;
-})(classnames || (classnames = {}));
+    classname.none = none;
+})(classname || (classname = {}));

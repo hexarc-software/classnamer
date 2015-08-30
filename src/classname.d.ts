@@ -1,4 +1,4 @@
-declare module classnames {
+declare module classname {
     interface ClassNameFragment {
         [key: string]: boolean;
     }

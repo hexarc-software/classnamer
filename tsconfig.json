@@ -20,11 +20,9 @@
         "./**/*.tsx",
         "!./node_modules/**/*",
         "!./src/**/*.d.ts",
-        "!./src/**/*.ts"
+        "!./dist/**/*.d.ts"
     ],
     "files": [
-        "./dist/index.d.ts",
-        "./dist/src/classname.d.ts",
-        "./index.ts"
+        "./src/classname.ts"
     ]
 }

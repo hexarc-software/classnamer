@@ -2,14 +2,15 @@
   "name": "classname",
   "version": "0.0.1-alpha",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/classname.js",
   "scripts": {
     "preinstall": "npm install autodts",
     "postinstall": "autodts link",
-    "prepublish": "tsc && autodts generate"
+    "prepublish": "tsc && autodts generate",
+    "test": "node test/test.js"
   },
   "typescript": {
-    "definition": "index.d.ts"
+    "definition": "dist/classname.d.ts"
   },
   "author": "Max Koverdyaev",
   "license": "ISC",

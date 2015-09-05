@@ -2,13 +2,10 @@
   "name": "classname",
   "version": "0.0.1-alpha",
   "description": "",
-  "main": "dist/lib.js",
-  "typings": "dist/lib",
+  "main": "dist/index.js",
+  "typings": "dist/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "typescript": {
-    "definition": "index.d.ts"
   },
   "author": "Max Koverdyaev",
   "license": "ISC"

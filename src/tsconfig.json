@@ -23,7 +23,7 @@
         "!./dist/**/*.d.ts"
     ],
     "files": [
-        "./lib.ts",
-        "./modules/classname.ts"
+        "./classname.ts",
+        "./index.ts"
     ]
 }

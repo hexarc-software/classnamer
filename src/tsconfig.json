@@ -3,7 +3,7 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
-        "isolatedModules": false,
+        "isolatedModules": true,
         "jsx": "react",
         "declaration": true,
         "experimentalDecorators": true,
@@ -13,7 +13,7 @@
         "noLib": false,
         "preserveConstEnums": true,
         "suppressImplicitAnyIndexErrors": true,
-        "outDir": "dist"
+        "outDir": "../dist"
     },
     "filesGlob": [
         "./**/*.ts",
@@ -23,7 +23,7 @@
         "!./dist/**/*.d.ts"
     ],
     "files": [
-        "./src/lib.ts",
-        "./src/modules/classname.ts"
+        "./lib.ts",
+        "./modules/classname.ts"
     ]
 }

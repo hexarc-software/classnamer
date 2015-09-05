@@ -1,1 +1,1 @@
-export { format } from "./modules/classname"
+export * from "./modules/classname"

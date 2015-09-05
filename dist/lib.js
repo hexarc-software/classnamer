@@ -1,2 +1,4 @@
-var classname_1 = require("./modules/classname");
-exports.format = classname_1.format;
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+__export(require("./modules/classname"));

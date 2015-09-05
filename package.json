@@ -3,21 +3,13 @@
   "version": "0.0.1-alpha",
   "description": "",
   "main": "dist/lib.js",
+  "typings": "dist/lib",
   "scripts": {
-    "preinstall": "npm install autodts",
-    "postinstall": "autodts link",
-    "prepublish": "tsc && autodts generate",
-    "test": "node test/test.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "typescript": {
     "definition": "index.d.ts"
   },
   "author": "Max Koverdyaev",
-  "license": "ISC",
-  "devDependencies": {
-    "typescript": "^1.5.3"
-  },
-  "dependencies": {
-    "autodts": "0.0.4"
-  }
+  "license": "ISC"
 }

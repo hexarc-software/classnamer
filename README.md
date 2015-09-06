@@ -2,6 +2,7 @@ Classnamer
 ===========
 
 [![Version](http://img.shields.io/npm/v/classnamer.svg)](https://www.npmjs.org/package/classnamer)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://badges.mit-license.org)
 
 An utility for formatting css classnames written in TypeScript.
 

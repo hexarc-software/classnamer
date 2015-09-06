@@ -6,7 +6,7 @@ Install with npm:
 npm install classnamer
 ```
 
-Using with node.js (Typescript):
+Using with node.js (TypesSript):
 
 ```TypeScript
 //classic node style

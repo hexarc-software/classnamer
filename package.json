@@ -1,12 +1,24 @@
 {
-  "name": "classname",
-  "version": "0.0.1-alpha",
-  "description": "",
+  "name": "classnamer",
+  "version": "1.0.0",
+  "description": "An utility for formatting css classnames written in TypeScript",
   "main": "dist/index.js",
   "typings": "dist/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shadeglare/classnamer.git"
+  },
+  "keywords": [
+      "es6",
+      "typescript",
+      "css",
+      "classname",
+      "classnamer",
+      "classnames"
+  ],
   "author": "Max Koverdyaev",
-  "license": "ISC"
+  "license": "MIT"
 }

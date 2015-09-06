@@ -1,3 +1,8 @@
+Classnamer
+===========
+
+[![Version](http://img.shields.io/npm/v/classnamer.svg)](https://www.npmjs.org/package/classnamer)
+
 An utility for formatting css classnames written in TypeScript.
 
 Install with npm:

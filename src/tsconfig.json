@@ -23,7 +23,6 @@
         "!./dist/**/*.d.ts"
     ],
     "files": [
-        "./classnamer.ts",
-        "./index.ts"
+        "./classnamer.ts"
     ]
 }

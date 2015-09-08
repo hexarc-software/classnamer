@@ -40,10 +40,12 @@ var classnamer = require("classnamer");
 ## Usage
 The `format` function takes any number of `ClassNameFragment` arguments and produces the string result.
 
-The `ClassNameFragment` is a union type of `ClassNamePrimitive`, `ClassNameObject` and `ClassNameFragmentList`.
+The `ClassNameFragment` type is a union of `ClassNamePrimitive`, `ClassNameObject` and `ClassNameFragmentList`.
+
 The `ClassNamePrimitive` type can be `string`, `number` or `boolean` and `ClassNameFragmentList` represents
-a list of `ClassNameFragment` objects. `ClassNameObject` is a map with boolean values
-which indicates should keys be included in the output or not.
+a list of `ClassNameFragment` objects.
+
+The `ClassNameObject` is a map with boolean values which indicates should keys be included in the output or not.
 
 ```js
 format("super", "man"); // => "super man"

@@ -44,9 +44,9 @@ The `ClassNameFragment` type is a union of `ClassNamePrimitive`, `ClassNameObjec
 
 The `ClassNamePrimitive` type can be `string`, `number` or `boolean`.
 
-The `ClassNameObject` is a map with boolean values which indicates should keys be included in the output or not.
+The `ClassNameObject` is a map with boolean values which indicate should keys be included in the output or not.
 
-The `ClassNameFragmentList` represents a list of `ClassNameFragment` objects.
+The `ClassNameFragmentList` type represents a list of `ClassNameFragment` objects.
 
 ```js
 format("super", "man"); // => "super man"

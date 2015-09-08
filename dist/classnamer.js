@@ -8,8 +8,11 @@ function format() {
             if (!arg) {
                 break;
             }
-            else if (typeof arg === "string" || typeof arg === "number") {
+            else if (typeof arg === "string" || typeof arg === "number" || typeof arg === "boolean") {
                 accum.push(arg);
+            }
+            else if (Array.isArray(arg)) {
+                accum.push(format.apply(null, arg));
             }
             else {
                 for (var key in arg) {

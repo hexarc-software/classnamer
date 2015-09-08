@@ -42,10 +42,11 @@ The `format` function takes any number of `ClassNameFragment` arguments and prod
 
 The `ClassNameFragment` type is a union of `ClassNamePrimitive`, `ClassNameObject` and `ClassNameFragmentList`.
 
-The `ClassNamePrimitive` type can be `string`, `number` or `boolean` and `ClassNameFragmentList` represents
-a list of `ClassNameFragment` objects.
+The `ClassNamePrimitive` type can be `string`, `number` or `boolean`.
 
 The `ClassNameObject` is a map with boolean values which indicates should keys be included in the output or not.
+
+The `ClassNameFragmentList` represents a list of `ClassNameFragment` objects.
 
 ```js
 format("super", "man"); // => "super man"

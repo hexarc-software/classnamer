@@ -1,14 +1,11 @@
 {
   "name": "classnamer",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "An utility for formatting css classnames written in TypeScript",
   "main": "dist/classnamer.js",
-  "typings": "index",
+  "typings": "dist/classnamer",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "typescript": {
-    "definition": "index.d.ts"
   },
   "repository": {
     "type": "git",
@@ -25,8 +22,5 @@
     "utility"
   ],
   "author": "Max Koverdyaev",
-  "license": "MIT",
-  "devDependencies": {
-    "dts-bundle": "^0.3.0"
-  }
+  "license": "MIT"
 }

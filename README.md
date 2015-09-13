@@ -16,9 +16,6 @@ npm install classnamer
 Using with node.js (TypeScript):
 
 ```js
-//add typings
-/// <reference path="./node_modules/classnamer/index.d.ts"/>
-
 //classic node style import
 import classnamer = require("classnamer");
 

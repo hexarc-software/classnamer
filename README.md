@@ -4,6 +4,7 @@ Classnamer
 [![Version](http://img.shields.io/npm/v/classnamer.svg)](https://www.npmjs.org/package/classnamer)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://badges.mit-license.org)
 [![Downloads](http://img.shields.io/npm/dm/classnamer.svg)](https://npmjs.org/package/classnamer)
+[![Downloads](http://img.shields.io/npm/dt/classnamer.svg)](https://npmjs.org/package/classnamer)
 
 An utility for formatting css classnames written in TypeScript (inspired by [classnames](https://github.com/JedWatson/classnames)).
 Compatible with TypeScript 1.6 commonjs module resolution typing.

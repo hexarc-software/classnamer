@@ -1,28 +1,24 @@
-function format() {
-    var args = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        args[_i - 0] = arguments[_i];
-    }
-    return args.reduce(function (accum, arg) {
-        do {
-            if (!arg) {
-                break;
-            }
-            else if (typeof arg === "string" || typeof arg === "number" || typeof arg === "boolean") {
-                accum.push(arg);
-            }
-            else if (Array.isArray(arg)) {
-                accum.push(format.apply(null, arg));
-            }
-            else {
-                for (var key in arg) {
-                    if (arg[key]) {
-                        accum.push(key);
-                    }
+exports.format = function () {
+    var accum = "";
+    for (var i = 0; i < arguments.length; i++) {
+        var arg = arguments[i];
+        if (!arg) {
+            continue;
+        }
+        var argType = typeof arg;
+        if (argType === "string" || argType === "number" || argType === "boolean") {
+            accum += " " + arg;
+        }
+        else if (Array.isArray(arg)) {
+            accum += " " + exports.format.apply(null, arg);
+        }
+        else {
+            for (var key in arg) {
+                if (arg[key]) {
+                    accum += " " + key;
                 }
             }
-        } while (false);
-        return accum;
-    }, []).join(" ");
-}
-exports.format = format;
+        }
+    }
+    return accum.substring(1);
+};

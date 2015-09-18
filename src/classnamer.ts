@@ -3,23 +3,29 @@ export type ClassNameObject = { [key: string]: boolean };
 export type ClassNameFragment = ClassNamePrimitive | ClassNameObject | ClassNameFragmentList;
 export interface ClassNameFragmentList extends Array<ClassNameFragment> { }
 
-export function format(...args: ClassNameFragment[]): string {
-    return args.reduce<Array<string | number | boolean>>((accum, arg) => {
-        do {
-            if (!arg) {
-                break;
-            } else if (typeof arg === "string" || typeof arg === "number" || typeof arg === "boolean") {
-                accum.push(arg);
-            } else if (Array.isArray(arg)) {
-                accum.push(format.apply(null, arg));
-            } else {
-                for (var key in arg) {
-                    if (arg[key]) {
-                        accum.push(key);
-                    }
+export interface IFormat {
+    (...args: ClassNameFragment[]): string;
+}
+
+export const format: IFormat = function() {
+    let accum = "";
+    for (let i = 0; i < arguments.length; i++) {
+        let arg = arguments[i];
+        if (!arg) {
+            continue;
+        }
+        let argType = typeof arg;
+        if (argType === "string" || argType === "number" || argType === "boolean") {
+            accum += " " + arg;
+        } else if (Array.isArray(arg)) {
+            accum += " " + format.apply(null, arg);
+        } else {
+            for (let key in arg) {
+                if (arg[key]) {
+                    accum += " " + key;
                 }
             }
-        } while (false);
-        return accum;
-    }, []).join(" ");
+        }
+    }
+    return accum.substring(1);
 }

@@ -2,10 +2,7 @@ export type ClassNamePrimitive = string | number | boolean;
 export type ClassNameObject = { [key: string]: boolean };
 export type ClassNameFragment = ClassNamePrimitive | ClassNameObject | ClassNameFragmentList;
 export interface ClassNameFragmentList extends Array<ClassNameFragment> { }
-
-export interface IFormat {
-    (...args: ClassNameFragment[]): string;
-}
+export type IFormat = (...args: ClassNameFragment[]) => string;
 
 export const format: IFormat = function() {
     let accum = "";

@@ -5,7 +5,5 @@ export declare type ClassNameObject = {
 export declare type ClassNameFragment = ClassNamePrimitive | ClassNameObject | ClassNameFragmentList;
 export interface ClassNameFragmentList extends Array<ClassNameFragment> {
 }
-export interface IFormat {
-    (...args: ClassNameFragment[]): string;
-}
+export declare type IFormat = (...args: ClassNameFragment[]) => string;
 export declare const format: IFormat;

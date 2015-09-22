@@ -4,7 +4,7 @@ export type ClassNameFragment = ClassNamePrimitive | ClassNameObject | ClassName
 export interface ClassNameFragmentList extends Array<ClassNameFragment> { }
 export type IFormat = (...args: ClassNameFragment[]) => string;
 
-export const format: IFormat = function() {
+const classnamer: IFormat = function() {
     let accum = "";
     for (let i = 0; i < arguments.length; i++) {
         let arg = arguments[i];
@@ -15,7 +15,7 @@ export const format: IFormat = function() {
         if (argType === "string" || argType === "number" || argType === "boolean") {
             accum += " " + arg;
         } else if (Array.isArray(arg)) {
-            accum += " " + format.apply(null, arg);
+            accum += " " + classnamer.apply(null, arg);
         } else {
             for (let key in arg) {
                 if (arg[key]) {
@@ -25,4 +25,6 @@ export const format: IFormat = function() {
         }
     }
     return accum.substring(1);
-}
+};
+
+export default classnamer;

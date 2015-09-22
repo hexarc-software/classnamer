@@ -1,7 +1,7 @@
 {
   "name": "classnamer",
-  "version": "2.2.1",
-  "description": "An utility for formatting css classnames written in TypeScript",
+  "version": "3.0.0",
+  "description": "The ES6 utility for formatting css classnames written in TypeScript",
   "main": "dist/classnamer.js",
   "typings": "dist/classnamer",
   "scripts": {

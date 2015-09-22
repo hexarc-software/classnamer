@@ -6,4 +6,5 @@ export declare type ClassNameFragment = ClassNamePrimitive | ClassNameObject | C
 export interface ClassNameFragmentList extends Array<ClassNameFragment> {
 }
 export declare type IFormat = (...args: ClassNameFragment[]) => string;
-export declare const format: IFormat;
+declare const classnamer: IFormat;
+export default classnamer;

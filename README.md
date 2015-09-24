@@ -25,7 +25,7 @@ import classnamer, {
     ClassNameObject,
     ClassNamePrimitive,
     ClassNameFragment,
-    ClassNameFragmentList } from "./classnamer";
+    ClassNameFragmentList } from "classnamer";
 ```
 
 ## Usage

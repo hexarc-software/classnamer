@@ -1,6 +1,6 @@
 {
   "name": "classnamer",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "The ES6 utility for formatting css classnames written in TypeScript",
   "main": "dist/classnamer.js",
   "typings": "dist/classnamer",
@@ -22,6 +22,6 @@
     "util",
     "utility"
   ],
-  "author": "Max Koverdyaev",
+  "author": "Max Koverdyaev <shadeglare@gmail.com>",
   "license": "MIT"
 }

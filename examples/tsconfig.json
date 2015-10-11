@@ -1,5 +1,4 @@
 {
-    "version": "1.5.0-beta",
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
@@ -21,6 +20,7 @@
         "!./node_modules/**/*"
     ],
     "files": [
-        "./example.ts"
-    ]
+        "example.ts"
+    ],
+    "exclude": []
 }

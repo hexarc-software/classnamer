@@ -1,5 +1,4 @@
 {
-    "version": "1.6.0",
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
@@ -23,6 +22,7 @@
         "!./dist/**/*.d.ts"
     ],
     "files": [
-        "./classnamer.ts"
-    ]
+        "classnamer.ts"
+    ],
+    "exclude": []
 }

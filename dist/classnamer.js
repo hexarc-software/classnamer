@@ -1,4 +1,9 @@
-var classnamer = function () {
+"use strict";
+function classnamer() {
+    var args = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        args[_i] = arguments[_i];
+    }
     var accum = "";
     for (var i = 0; i < arguments.length; i++) {
         var arg = arguments[i];
@@ -21,6 +26,6 @@ var classnamer = function () {
         }
     }
     return accum.substring(1);
-};
+}
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = classnamer;

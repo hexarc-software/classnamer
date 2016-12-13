@@ -2,9 +2,8 @@ export type ClassNamePrimitive = string | number | boolean;
 export type ClassNameObject = { [key: string]: boolean };
 export type ClassNameFragment = ClassNamePrimitive | ClassNameObject | ClassNameFragmentList;
 export interface ClassNameFragmentList extends Array<ClassNameFragment> { }
-export type IFormat = (...args: ClassNameFragment[]) => string;
 
-const classnamer: IFormat = function() {
+export default function classnamer(...args: ClassNameFragment[]) {
     let accum = "";
     for (let i = 0; i < arguments.length; i++) {
         let arg = arguments[i];
@@ -25,6 +24,4 @@ const classnamer: IFormat = function() {
         }
     }
     return accum.substring(1);
-};
-
-export default classnamer;
+}

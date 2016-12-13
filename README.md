@@ -7,7 +7,7 @@ Classnamer
 [![Downloads](http://img.shields.io/npm/dt/classnamer.svg)](https://npmjs.org/package/classnamer)
 
 The ES6 utility for formatting css classnames written in TypeScript (inspired by [classnames](https://github.com/JedWatson/classnames)).
-Compatible with TypeScript 1.6 commonjs module resolution.
+Compatible with TypeScript 1.6+ commonjs module resolution.
 
 Install with npm:
 

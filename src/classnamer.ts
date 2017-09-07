@@ -1,6 +1,6 @@
 export type ClassNamePrimitive = string | number | boolean;
 export type ClassNameObject = { [key: string]: boolean };
-export type ClassNameFragment = ClassNamePrimitive | ClassNameObject | ClassNameFragmentList;
+export type ClassNameFragment = ClassNamePrimitive | ClassNameObject | ClassNameFragmentList | null | undefined;
 export interface ClassNameFragmentList extends Array<ClassNameFragment> { }
 
 export default function classnamer(...args: ClassNameFragment[]) {

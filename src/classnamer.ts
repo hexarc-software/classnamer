@@ -1,4 +1,4 @@
-export type ClassNamePrimitive = string | number | boolean;
+export type ClassNamePrimitive = string | number | boolean | null | undefined;
 export type ClassNameObject = { [key: string]: boolean | null | undefined };
 export type ClassNameFragment = ClassNamePrimitive | ClassNameObject | ClassNameFragmentList | null | undefined;
 export interface ClassNameFragmentList extends Array<ClassNameFragment> { }

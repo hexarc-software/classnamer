@@ -1,17 +1,17 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function classnamer() {
     var args = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         args[_i] = arguments[_i];
     }
     var accum = "";
-    for (var i = 0; i < arguments.length; i++) {
-        var arg = arguments[i];
+    for (var i = 0; i < args.length; i++) {
+        var arg = args[i];
         if (!arg) {
             continue;
         }
-        var argType = typeof arg;
-        if (argType === "string" || argType === "number" || argType === "boolean") {
+        if (typeof arg === "string" || typeof arg === "number" || typeof arg === "boolean") {
             accum += " " + arg;
         }
         else if (Array.isArray(arg)) {
@@ -27,5 +27,4 @@ function classnamer() {
     }
     return accum.substring(1);
 }
-Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = classnamer;
